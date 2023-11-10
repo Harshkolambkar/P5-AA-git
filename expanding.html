@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+        // $('img').add($('label[for*=aster]')).css('border','2px solid blue');
+       // $('img').add($('label[for^=p]')).css('border','2px solid blue');
+      // $('img').add($('label[for$=a]')).css('border','2px solid blue');
+
+      //$('img').eq(-2).css('border','2px solid blue');
+     // $('img').first().css('border','2px solid blue');
+    // $('img').last().css('border','2px solid blue');
+       // var jq = $('[for*=p]');
+       // $('label').filter(jq).css('border','2px solid blue');
+     //  $('.dcell').has('label[for^=p]').css('border','2px solid blue');
+
+     //$('img').slice(4).css({'border':'3px solid blue'})
+
+    // $('img').not('img:odd').css('border','2px solid blue');
+   // $('label').is('[for*=p]').css('border','2px solid blue');
+   /*   $('label').first().css('border','2px solid blue')
+     .end()
+     .css('fontSize','3em');
+     */
+    //$('div.drow').children().css('border','3px solid blue');
+    //$('div.drow').find('img').css('border','3px solid blue');
+
+   /*   if($('div.dcell').children().is('img')){
+        //console.log('it is true')
+         $('img').css('border','3px solid blue');
+     }
+ */
+
+ //$('img').parentsUntil('div.drow').css('border','2px solid blue');
+ $('img').nextUntil('input').css('border','2px solid blue');
+        });
+    </script>
+</head>
+<body>
+    <h1>Jacqui's Flower Shop</h1>
+    <form method="post">
+        <div id="oblock">        
+            <div class="dtable">
+                <div id="row1" class="drow">
+                    <div class="dcell">
+                        <img src="images/aster.png"/><label for="aster">Aster:</label>
+                        <input type="text" name="aster" value="0" required>
+                      
+                    </div>
+                    <div class="dcell">
+                        <img src="images/daffodil.png"/><label for="daffodil">Daffodil:</label>
+                        <input name="daffodil" value="0" required >
+                    </div>
+                    <div class="dcell">
+                        <img src="images/rose.png"/><label for="rose">Rose:</label>
+                        <input name="rose" value="0" required>
+                    </div>                
+                </div>
+                <div id="row2" class="drow">
+                    <div class="dcell">
+                        <img src="images/peony.png"/><label for="peony">Peony:</label>
+                        <input name="peony" value="0" required>
+                    </div>
+                    <div class="dcell">
+                        <img src="images/primula.png"/><label for="primula">Primula:</label>
+                        <input name="primula" value="0" required>
+                    </div>            
+                    <div class="dcell">
+                        <img src="images/snowdrop.png"/><label for="snowdrop">Snowdrop:</label>
+                        <input name="snowdrop" value="0" required>
+                    </div>            
+                </div>            
+            </div>
+        </div>
+        <div id="buttonDiv"><button type="submit">Place Order</button></div>                    
+    </form>
+</body>
+</html>
